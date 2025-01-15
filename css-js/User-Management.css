@@ -1,0 +1,159 @@
+/* พื้นฐานการจัดวาง */
+*{
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filters select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f8ff;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4682b4;
+}
+
+.btn {
+    padding: 10px 20px;  /* ระยะห่างในปุ่ม */
+    border: 2px solid transparent;  /* กรอบของปุ่ม */
+    border-radius: 5px;  /* มุมปุ่มที่โค้ง */
+    font-size: 16px;  /* ขนาดตัวอักษร */
+    cursor: pointer;  /* เปลี่ยนรูปแบบเคอร์เซอร์เมื่อชี้ไปที่ปุ่ม */
+    transition: all 0.3s ease;  /* เพิ่มการเปลี่ยนแปลงแบบค่อยเป็นค่อยไป */
+    margin-left:10px;
+}
+
+/* ปุ่มที่ใช้ในสถานะ "primary" */
+.btn-primary {
+    background-color: #007bff;  /* สีพื้นหลังของปุ่ม */
+    color: white;  /* สีของตัวอักษร */
+    border-color: #007bff;  /* สีกรอบของปุ่ม */
+}
+
+/* เอฟเฟกต์เมื่อมีการ hover ปุ่ม */
+.btn:hover {
+    background-color: #0056b3;  /* เปลี่ยนสีพื้นหลังเมื่อเลื่อนเมาส์ไปเหนือปุ่ม */
+    border-color: #0056b3;  /* เปลี่ยนสีกรอบเมื่อเลื่อนเมาส์ไปเหนือปุ่ม */
+}
+
+/* เอฟเฟกต์เมื่อปุ่มถูกกด */
+.btn:active {
+    background-color: #003f7f;  /* สีพื้นหลังเมื่อปุ่มถูกคลิก */
+    border-color: #003f7f;  /* สีกรอบเมื่อปุ่มถูกคลิก */
+}
+
+.btn-danger {
+    background-color: #dc3545;  /* สีพื้นหลังของปุ่ม */
+    color: white;  /* สีของตัวอักษร */
+    border-color: #dc3545;  /* สีกรอบของปุ่ม */
+}
+
+/* เอฟเฟกต์เมื่อมีการ hover ปุ่ม */
+.btn-danger:hover {
+    background-color: #c82333;  /* เปลี่ยนสีพื้นหลังเมื่อเลื่อนเมาส์ไปเหนือปุ่ม */
+    border-color: #bd2130;  /* เปลี่ยนสีกรอบเมื่อเลื่อนเมาส์ไปเหนือปุ่ม */
+}
+
+/* เอฟเฟกต์เมื่อปุ่มถูกกด */
+.btn-danger:active {
+    background-color: #9a2e2e;  /* สีพื้นหลังเมื่อปุ่มถูกคลิก */
+    border-color: #9a2e2e;  /* สีกรอบเมื่อปุ่มถูกคลิก */
+}

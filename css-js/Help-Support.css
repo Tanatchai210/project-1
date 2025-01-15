@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 2rem;
+}
+
+.faq-section, .support-section {
+    margin-bottom: 2rem;
+}
+
+.faq-list {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background: #ffffff;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.support-section form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.support-section form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.support-section form input, .support-section form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.support-section form button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.support-section form button:hover {
+    background-color: #0056b3;
+}
